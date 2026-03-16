@@ -1,0 +1,323 @@
+/* RESET */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:Arial, sans-serif;
+background:#f5f5f5;
+overflow-x:hidden;
+}
+
+
+/* NAVBAR */
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:#222;
+padding:15px 40px;
+animation:navSlide 0.8s ease;
+}
+nav{
+animation: navSlide 1s ease;
+}
+@keyframes navSlide{
+from{
+transform: translateY(-80px);
+opacity: 0;
+}
+
+to{
+transform: translateY(0);
+opacity: 1;
+}
+}
+nav h1{
+color:#00bcd4;
+transition:0.4s;
+}
+
+nav h1:hover{
+transform:scale(1.1);
+}
+
+nav ul{
+display:flex;
+list-style:none;
+}
+
+nav ul li{
+margin-left:25px;
+}
+
+nav ul li a{
+color:rgb(218,4,36);
+text-decoration:none;
+font-weight:bold;
+
+transition:0.3s;
+}
+
+nav ul li a:hover{
+color:#00bcd4;
+transform:scale(1.1);
+}
+/* RESPONSIVE */
+
+@media (max-width:768px){
+
+nav{
+flex-direction:column;
+align-items:flex-start;
+}
+
+nav ul{
+flex-direction:column;
+margin-top:10px;
+}
+
+nav ul li{
+margin:8px 0;
+}
+
+.achievements{
+flex-direction:column;
+align-items:center;
+}
+}
+
+/* HOME SECTION */
+
+.home{
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+
+background-image:url("background.jpg");
+background-size:cover;
+background-position:center;
+
+min-height:90vh;
+
+animation:fadeIn 1.5s ease;
+}
+
+@keyframes fadeIn{
+from{
+opacity:0;
+}
+
+to{
+opacity:1;
+}
+
+}
+
+.home h2{
+font-size:40px;
+color:#ce731e;
+text-shadow:2px 2px 6px rgb(134, 0, 251);
+font-family: 'Times New Roman', Times, serif;
+transition:0.4s;
+}
+
+.home h2:hover{
+transform:scale(1.1);
+}
+
+.home p{
+color:#00ccff;
+font-weight:bolder;
+margin-top:10px;
+font-size:18px;
+}
+
+
+/* ABOUT SECTION */
+
+.aboutme{
+padding:60px 40px;
+
+background-image:url("image2.jpg");
+background-size:cover;
+background-position:center;
+min-height:90vh;
+}
+
+.aboutme-heading{
+color:#0849eb;
+margin-bottom:20px;
+}
+
+.aboutme-text{
+color:red;
+font-size:18px;
+margin-bottom:10px;
+}
+
+.aboutme-heading2{
+margin-top:25px;
+font-style:italic;
+}
+
+.aboutme-list{
+margin-top:10px;
+font-size:18px;
+color:#0849eb;
+}
+
+.aboutme-list li{
+transition:0.3s;
+}
+
+.aboutme-list li:hover{
+transform:translateX(10px);
+}
+
+
+/* ACHIEVEMENTS */
+
+.achievements{
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+gap:30px;
+padding:50px;
+
+background-image:url("image1.avif");
+background-size:cover;
+background-position:center;
+
+min-height:85vh;
+}
+
+.achievements h2{
+width:100%;
+text-align:center;
+color:yellowgreen;
+margin-bottom:20px;
+}
+
+
+/* ACHIEVEMENT CARDS */
+
+.achievements-card{
+background:rgb(178, 192, 204);
+padding:25px;
+width:250px;
+border-radius:10px;
+text-align:center;
+transition:0.3s;
+}
+.achievements-card:hover{
+transform:translateY(-10px) scale(1.05);
+}
+/* PROJECT SECTION */
+
+.projects{
+padding:50px;
+text-align:center;
+
+background-image:url("image4.jpg");
+background-size:cover;
+background-position:center;
+
+min-height:85vh;
+}
+
+.projects h2{
+margin-bottom:30px;
+color:white;
+}
+
+
+/* PROJECT CARDS */
+.projects{
+    h2{
+        color: #f10938;
+    }
+}
+.project-box{
+background:rgb(70, 203, 237);
+padding:25px;
+margin:auto;
+width:260px;
+border-radius:10px;
+transition:0.3s;
+.link{
+    color: #1500ff;
+}
+}
+
+.project-box:hover{
+transform:translateY(-10px) scale(1.05);
+}
+.project-box a{
+display:inline-block;
+margin-top:10px;
+color:#00bcd4;
+font-weight:bold;
+text-decoration:none;
+transition:0.3s;
+}
+
+.project-box a:hover{
+color:#ff0033;
+transform:scale(1.1);
+}
+.project-image{
+    float:right;
+    width:30px;
+    transition: 0.3s;
+}
+
+
+/* CONTACT SECTION */
+
+.contact{
+padding:60px 40px;
+
+background-image:url("image3.jpg");
+background-size:cover;
+background-position:center;
+
+min-height:85vh;
+
+animation:fadeIn 1.5s ease;
+}
+
+.contact h2{
+color:rgb(231, 10, 10);
+margin-bottom:20px;
+}
+
+.info{
+color:rgb(5, 11, 55);
+font-size:18px;
+margin:10px 0;
+font-family: Georgia, 'Times New Roman', Times, serif;
+transition:0.3s;
+}
+
+.info:hover{
+transform:translateX(10px);
+}
+
+
+/* FOOTER */
+
+footer{
+text-align:center;
+background:#222;
+color:white;
+padding:20px;
+}
+
+
